@@ -15,14 +15,23 @@
 li,a{
 text-decoration: none;
 list-style-type: none;
+gap: 20px;
+}
+.dashboard{
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+.communities{
+  margin-bottom: 25px;
 }
 .sidebar{
 display:grid;
 grid-row: 1/3;
+grid-template-columns: 100px;
 grid-template-rows: 150px;
 background-color:rgb(85, 85, 233);
 color:white;
-grid-template-columns: 100px;
+font-family: "Roboto",sans-serif;
  
 }
 .sidebar-li{
@@ -45,11 +54,7 @@ height: 24px;
   color:white;
 height: 30px;
 }
-.search{
-  display:flex;
-  justify-content: flex-start;
-flex-direction: row;
-}
+
 .search ul,.search li{
   display:grid;
   grid-row-end: 1;
@@ -71,14 +76,16 @@ background-color: white;
 margin:25px;
 display: grid;
 grid-template-columns: 100px  100px;
+gap:25px;
 }
 .new{
   display:flex;
-  flex-direction: row;
-  gap:450px;
-  justify-content: space-between;
+  gap:200px;
 }
-
+.neww{
+  display:grid;
+  grid-row-end: 1;
+}
 .hi{
   font-size: small;
 }
@@ -86,6 +93,11 @@ grid-template-columns: 100px  100px;
   display: flex;
   justify-content: space-between;
   gap:25px;
+}
+.neww ul{
+  display:flex;
+  flex-direction: row;
+  gap:10px;
 }
 .buttons >button:hover{
   color:black;
@@ -108,4 +120,18 @@ grid-template-columns: 100px  100px;
   grid-column-start: 2;
   grid-column-end: 5;
   grid-row-start: 2;
+  gap:100px;
+}
+
+
+/*main content*/
+.card{
+  display:grid;
+  grid-template-columns: 200px;
+  background-color: dark;
+  color:white;
+  grid-template-columns: minmax(200px, 1fr);
+  grid-template-rows: minmax(100px, 200px);
+  border: 1px solid red;
+  
 }
