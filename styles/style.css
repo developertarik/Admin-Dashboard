@@ -121,17 +121,26 @@ gap:25px;
   grid-column-end: 5;
   grid-row-start: 2;
   gap:100px;
+  
 }
 
 
 /*main content*/
-.card{
+.your-projects{
   display:grid;
   grid-template-columns: 200px;
-  background-color: dark;
-  color:white;
-  grid-template-columns: minmax(200px, 1fr);
-  grid-template-rows: minmax(100px, 200px);
-  border: 1px solid red;
+  color:black;
+  grid-template-columns: repeat(2,minmax(200px, 1fr));
+  grid-template-rows:repeat(3,minmax(100px, 200px));
+  gap:25px;
+  margin:15px;
+
   
+}
+
+.card{
+  background-color: white;
+
+  border-left: 5px solid gold;
+  border-radius: 5px;
 }
